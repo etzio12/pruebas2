@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('build') {
+            steps {
+                echo 'prueba 1
+            }
+        }
+        stage('copiar') {
+            steps {
+                echo 'prueba 2'
+            }
+        }
+        stage('validar') {
+            steps {
+                echo 'test'
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo 'test2'
+            }
+        }
+    }
+}
